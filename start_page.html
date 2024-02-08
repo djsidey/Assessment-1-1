@@ -39,9 +39,29 @@
       }
       
       article a {
-        color: var(--c-magenta);
+        color: var(--c-magenta); /* sets the links to magenta in the article */
+      }
+      
+      a:hover {
+        color: var(--c-orange); /* Sets the links to change colour when the mouse hovers over them */
       }
 
+      .Subsection1 {
+        border: 3px solid cyan; /* Add a border around the div */
+        padding: 10px; /* Add some padding for spacing between the content and the border */
+      }
+
+      .Subsection2 {
+        border: 3px solid cyan; /* Add a border around the div */
+        padding: 10px; /* Add some padding for spacing between the content and the border */
+      }
+
+      header {
+        color: var(--c-yellow);
+        font-size: 150%;
+        text-align: center;
+      }
+      
     </style>
 
   </head>
@@ -80,21 +100,26 @@
           <a href="https://www.unisa.edu.au/">Univeristy of South Australia</a>
         </p>
 
-        <h3>Subsection</h3>
+        <div class="Subsection1">
 
-        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Here is another link! 
-          <a href="https://www.wikipedia.org/">Wikipedia</a>
-        </p>
+          <h3>Subsection</h3>
 
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+          <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Here is another link! 
+            <a href="https://www.wikipedia.org/">Wikipedia</a>
+          </p>
 
-        <h3>Another subsection</h3>
+          <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+         </div>
 
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+         <div class="Subsection2">
+            <h3>Another subsection</h3>
 
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi. This is the last link and it goes nowhere!
-          <a href="#">This link does nothing!</a>"
-        </p>
+            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi. This is the last link and it goes nowhere!
+              <a href="#">This link does nothing!</a>"
+            </p>
+          </div>
       </article>
 
       <!-- the aside content can also be nested within the main content -->
