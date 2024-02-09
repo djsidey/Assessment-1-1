@@ -47,13 +47,13 @@
       }
 
       .Subsection1 {
-        border: 3px solid cyan; /* Add a border around the div */
-        padding: 10px; /* Add some padding for spacing between the content and the border */
+        border: 3px solid cyan;
+        padding: 10px;
       }
 
       .Subsection2 {
-        border: 3px solid cyan; /* Add a border around the div */
-        padding: 10px; /* Add some padding for spacing between the content and the border */
+        border: 3px solid cyan;
+        padding: 10px;
       }
 
       header {
@@ -63,6 +63,26 @@
       }
 
       main {display: grid; grid-template-columns: 80% 20%; gap: 10px;
+      }
+
+      nav {width: 100%;
+      }
+
+      nav ul {display: flex;
+      justify-content: center;
+      list-style-type: none;
+      }
+
+      nav ul a {margin-right: 80px;
+      }
+
+      aside {color: var(--c-green);
+      }
+
+      aside a {color: var(--c-red);
+      }
+
+      aside a:hover {color: var(--c-blue);
       }
       
     </style>
@@ -77,7 +97,7 @@
     </header>
 
     <nav>
-      <ul>
+      <ul class="toplinks">
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
         <li><a href="#">Projects</a></li>
