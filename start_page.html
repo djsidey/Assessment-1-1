@@ -48,41 +48,44 @@
 
       .Subsection1 {
         border: 3px solid cyan;
-        padding: 10px;
+        padding: 10px; /* Adds a border around the class called Subsection 1*/
       }
 
       .Subsection2 {
         border: 3px solid cyan;
-        padding: 10px;
+        padding: 10px; /* Adds a border around the class called Subsection 2*/
       }
 
       header {
         color: var(--c-yellow);
         font-size: 150%;
-        text-align: center;
+        text-align: center; /* Changes the colour of the main header, increases the size and centres the text*/
       }
 
-      main {display: grid; grid-template-columns: 80% 20%; gap: 10px;
+      main {display: grid; grid-template-columns: 80% 20%; gap: 10px; /* sets the page to have two columns at 80 and 20 percent of the width of the display and sets a small gap between them */
       }
 
-      nav {width: 100%;
+      nav {width: 100%; /* sets the nav section to ensure it goes across the whole page so the list items display correctly */
       }
 
       nav ul {display: flex;
       justify-content: center;
-      list-style-type: none;
+      list-style-type: none; /* sets the unordered list to display without bullet points, is justified and sits inside a flex container */
       }
 
-      nav ul a {margin-right: 80px;
+      nav ul a {margin-right: 80px; /* sets the links in the unordered list to space out across the page */
       }
 
-      aside {color: var(--c-green);
+      aside {color: var(--c-green); /* sets the text inside the aside box to green */
       }
 
-      aside a {color: var(--c-red);
+      aside a {color: var(--c-red); /* sets the links inside the aside box to red*/
       }
 
-      aside a:hover {color: var(--c-blue);
+      aside a:hover {color: var(--c-blue); /* sets the links inside the aside box to change to blue when the mouse moves over them*/
+      }
+
+      article h2, h3 {padding-top: 50px; /* sets the padding above the article headings to increase spacing from the previous text*/
       }
       
     </style>
